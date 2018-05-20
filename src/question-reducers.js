@@ -1,4 +1,4 @@
-import QUESTION_LIST from './question-actions'
+import { QUESTION_LIST } from './question-actions'
 
 const initialState = {
     questionList: [

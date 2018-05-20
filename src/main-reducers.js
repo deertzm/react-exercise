@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import './question-reducers'
-import './user-reducers'
+import questionReducers from './question-reducers'
+import userReducers from './user-reducers'
 
 const mainReducers = combineReducers({
-    questionReducrs,
+    questionReducers,
     userReducers
 })
 
