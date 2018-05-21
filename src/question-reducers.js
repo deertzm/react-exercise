@@ -3,58 +3,58 @@ import { QUESTION_LIST } from './question-actions'
 const initialState = {
     questionList: [
         {
-            "question": "asdlkja;ldkjfa;ldfj;alkf",
+            "question": "Lorem ipsum dolor sit amet?",
             "answers": [
                 {
-                    "text": "1",
+                    "text": "Car",
                     "score": 1
                 },
                 {
-                    "text": "2",
+                    "text": "Bus",
                     "score": 2
                 },
                 {
-                    "text": "3",
+                    "text": "Train",
                     "score": 3
                 }
             ]
         },
         {
-            "question": "lj;lkjlk",
+            "question": "Lorem ipsum dolor sit amet, consectetur adipiscing?",
             "answers": [
                 {
                     "text": "4",
-                    "score": 1
+                    "score": 4
                 },
                 {
                     "text": "5",
-                    "score": 2
+                    "score": 5
                 },
                 {
                     "text": "6",
-                    "score": 3
+                    "score": 6
                 }
             ]
         },
         {
-            "question": "asdfasdf",
+            "question": "Lorem ipsum dolor?",
             "answers": [
                 {
-                    "text": "7",
-                    "score": 1
+                    "text": "Left",
+                    "score": 20
                 },
                 {
-                    "text": "8",
-                    "score": 2
+                    "text": "Right",
+                    "score": 30
                 },
                 {
-                    "text": "9",
-                    "score": 3
+                    "text": "Up",
+                    "score": 40
                 }
             ]
         },
         {
-            "question": "jhghdf",
+            "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
             "answers": [
                 {
                     "text": "Green",

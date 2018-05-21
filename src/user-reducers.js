@@ -6,8 +6,8 @@ import {
 
 const initialState = {
     "userIndex": 0,
-    "answers": [0, 0, 0, 0],
-    "score": 0
+    "userAnswers": [0, 0, 0, 0],
+    "userScore": 0
 }
 
 export default function userReducers(state=initialState, action) {

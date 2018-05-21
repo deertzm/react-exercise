@@ -6,6 +6,8 @@ import Button from './Button'
 const mapStateToProps = state => {
     return {
         userIndex: state.userReducers.userIndex,
+        userAnswers: state.userReducers.userAnswers,
+        userScore: state.userReducers.userScore,
         questionList: state.questionReducers.questionList
     }
 }
@@ -13,7 +15,9 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     console.log('dispatch')
     return {
-        setUserIndex: (i) => {dispatch(userActions.getUserIndex(i))}
+        setUserIndex: (i) => {dispatch(userActions.getUserIndex(i))},
+        setScore: (s) => {dispatch(userActions.getUserScore(s))},
+        setAnswers: (a) => {dispatch(userActions.getUserAnswers(a))}
     }
 }
 
@@ -25,7 +29,15 @@ class ButtonContainer extends React.Component {
     }
 
     toggleClick(btnIndex) {
+        let newans = this.props.userAnswers.slice()
+        newans[this.props.userIndex] = this.props.questionList[this.props.userIndex].answers[this.props.buttonIndex].score
+        let sc = 0
+        for (var i = 0; i < this.props.questionList.length; i++) {
+            sc += this.props.userAnswers[i]
+        }
         let ix = this.props.userIndex + 1
+        this.props.setScore(sc)
+        this.props.setAnswers(newans)
         this.props.setUserIndex(ix)
     }
 

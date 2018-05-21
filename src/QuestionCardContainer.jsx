@@ -6,7 +6,8 @@ import ScoreCard from './ScoreCard'
 const mapStateToProps = state => {
     return {
         userIndex: state.userReducers.userIndex,
-        score: state.userReducers.score,
+        userScore: state.userReducers.userScore,
+        userAnswers: state.userReducers.userAnswers,
         questionList: state.questionReducers.questionList
     }
 }
@@ -22,7 +23,7 @@ class QuestionCardContainer extends React.Component {
             qt = <QuestionCard  questionText={this.props.questionList[this.props.userIndex].question} />
         }
         else {
-            qt = <ScoreCard scoreText={"Your score is " + this.props.score} />
+            qt = <ScoreCard scoreText={"Your score is " + this.props.userScore} />
         }
         return qt
     }

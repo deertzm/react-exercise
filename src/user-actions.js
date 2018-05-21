@@ -12,13 +12,13 @@ export function getUserIndex(index) {
 export function getUserAnswers(answers) {
     return {
         type: USER_ANSWERS,
-        answers: answers
+        userAnswers: answers
     }
 }
 
 export function getUserScore(score) {
     return {
         type: USER_SCORE,
-        score: score
+        userScore: score
     }
 }
