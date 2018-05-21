@@ -1,0 +1,29 @@
+.btn {
+    display: inline-block;
+    height: 10rem;
+    width: 15rem;
+    background-color: #FFF;
+    box-shadow: 0 1rem 2rem rgba(#000, .2);
+    border-radius: 3px;
+    text-align: center;
+    transition: all .2s;
+    cursor: pointer;
+    font-size: 2rem;
+    position: relative;    
+
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba(#000, .1);
+    }
+
+    &__btn-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

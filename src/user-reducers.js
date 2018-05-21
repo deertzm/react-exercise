@@ -13,18 +13,18 @@ const initialState = {
 export default function userReducers(state=initialState, action) {
     switch(action.type) {
         case USER_INDEX:
-        return Object.assign({}, state, {
-            userIndex: state.userIndex
-        })
+            return Object.assign({}, state, {
+                userIndex: action.userIndex
+            })
         case USER_ANSWERS:
-        return Object.assign({}, state, {
-            userAnswers: state.userAnswers
-        })
+            return Object.assign({}, state, {
+                userAnswers: action.userAnswers
+            })
         case USER_SCORE:
-        return Object.assign({}, state, {
-            userScore: state.userScore
-        })
+            return Object.assign({}, state, {
+                userScore: action.userScore
+            })
         default:
-        return state
+            return state
     }
 }

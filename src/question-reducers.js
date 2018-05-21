@@ -23,15 +23,15 @@ const initialState = {
             "question": "lj;lkjlk",
             "answers": [
                 {
-                    "text": "1",
+                    "text": "4",
                     "score": 1
                 },
                 {
-                    "text": "2",
+                    "text": "5",
                     "score": 2
                 },
                 {
-                    "text": "3",
+                    "text": "6",
                     "score": 3
                 }
             ]
@@ -40,15 +40,15 @@ const initialState = {
             "question": "asdfasdf",
             "answers": [
                 {
-                    "text": "1",
+                    "text": "7",
                     "score": 1
                 },
                 {
-                    "text": "2",
+                    "text": "8",
                     "score": 2
                 },
                 {
-                    "text": "3",
+                    "text": "9",
                     "score": 3
                 }
             ]
@@ -57,15 +57,15 @@ const initialState = {
             "question": "jhghdf",
             "answers": [
                 {
-                    "text": "1",
+                    "text": "Green",
                     "score": 1
                 },
                 {
-                    "text": "2",
+                    "text": "Red",
                     "score": 2
                 },
                 {
-                    "text": "3",
+                    "text": "Blue",
                     "score": 3
                 }
             ]

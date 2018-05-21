@@ -1,11 +1,16 @@
 import React from 'react'
 import './QuestionCard.css'
+import './ButtonContainer'
+import ButtonContainer from './ButtonContainer';
 
 const QuestionCard = ({ questionText }) => (
     <div className="question-card">
-        <span className="question-card__question-text">
+        <div className="question-card__question-text">
             {questionText }
-        </span>
+        </div>
+        <ButtonContainer buttonIndex="0" />
+        <ButtonContainer buttonIndex="1" />
+        <ButtonContainer buttonIndex="2" />
     </div>
 )
 
